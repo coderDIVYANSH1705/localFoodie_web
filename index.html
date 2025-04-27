@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Local Foodie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      background: #FFFF;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .wine-glass {
+      width: 100px;
+      opacity: 0;
+      transform: translateY(-100px) scale(0.5);
+      animation: wineEnter 1.5s ease forwards;
+    }
+
+    @keyframes wineEnter {
+      to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+    }
+
+    .logo-container {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #b10034;
+    }
+
+    .brand-name {
+      font-family: 'Pacifico', cursive;
+      font-size: 5.5rem;
+      opacity: 0;
+      animation: fadeInLogo 1.4s ease 1.5s forwards;
+    }
+
+    @keyframes fadeInLogo {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .slogan {
+      font-size: 1.6rem;
+      margin-top: 8px;
+      color: #480949;
+      letter-spacing: 1px;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeInSlogan 1s ease 2.5s forwards;
+    }
+
+    @keyframes fadeInSlogan {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .logo-half {
+      transition: transform 1s ease;
+    }
+
+    .logo-split .left {
+      transform: translateX(-120%);
+    }
+
+    .logo-split .right {
+      transform: translateX(120%);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Glass of Wine with Lemon -->
+  <img src="https://img.icons8.com/emoji/96/wine-glass-emoji.png" class="wine-glass" alt="Wine Glass with Lemon"/>
+
+  <!-- Logo Text -->
+  <div class="logo-container" id="logo">
+    <div class="brand-name"><span class="logo-half left">Local</span> <span class="logo-half right">Foodie</span></div>
+    <div class="slogan">"SEEDHA APKE GHAR TK"</div>
+  </div>
+
+  <script>
+    const logo = document.getElementById('logo');
+
+    // Step 1: Wait and split logo for dramatic effect
+    setTimeout(() => {
+      logo.classList.add('logo-split');
+    }, 3500);
+
+    // Step 2: Redirect to main page
+    setTimeout(() => {
+      window.location.href = "http://127.0.0.1:3000/main/HOME_PAGE.html"; // Replace with your real homepage
+    }, 5000);
+  </script>
+
+</body>
+</html>

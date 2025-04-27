@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color1.css">
+    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="dark-mode">
+    <div class="shop-section">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Menu</h2>
+            </div>
+        </div>
+        <!-- appetizers -->
+        <div class="food-type typing1">
+            <h5>Appetizers</h5>
+        </div>
+        <button onclick="sortBoxesByPrice(this.nextElementSibling)" class="btn">Sort by Price</button>
+        <div class="image-container">
+            <div class="box1 box">
+                <div class="box-content">
+                <h2>Bruschetta</h2>
+                <div class="box-img1">
+                    <img src="pictures/bruschetta1.jpeg" class="image">
+                </div>
+                <p>price: 200rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div>
+            </div>
+            <div class="box2 box"><div class="box-content">
+                <h2>Spinach and Artichoke Dip</h2>
+                <div class="box-img2">
+                    <img src="pictures/dip2.jpeg" class="image">
+                </div>
+                <p>price : 180rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+            <div class="box3 box"><div class="box-content">
+                <h2>Calamari</h2>
+                <div class="box-img3">
+                    <img src="pictures/calamari.jpeg" class="image">
+                </div>
+                <p>price : 150</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+            <div class="box4 box"><div class="box-content">
+                <h2>Chicken Wings</h2>
+                <div class="box-img4">
+                    <img src="pictures/chicken wings.jpeg" class="image">
+                </div>
+                <p>price: 100rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+        </div>
+        <!-- Salads -->
+        <div class="food-type typing2">
+            <h5>Salads</h5>
+        </div>
+        <button onclick="sortBoxesByPrice(this.nextElementSibling)" class="btn">Sort by Price</button>
+        <div class="image-container">
+            <div class="box1 box">
+                <div class="box-content">
+                <h2>Caesar Salad</h2>
+                <div class="box-img1">
+                    <img src="pictures/caesar salad.jpeg" class="image">
+                </div>
+                <p>price: 220rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div>
+            </div>
+            <div class="box2 box"><div class="box-content">
+                <h2>Greek Salad</h2>
+                <div class="box-img2">
+                    <img src="pictures/greek salad.jpeg" class="image">
+                </div>
+                <p>price : 200rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+            <div class="box3 box"><div class="box-content">
+                <h2>Caprese Salad</h2>
+                <div class="box-img3">
+                    <img src="pictures/caprese salad.jpeg" class="image">
+                </div>
+                <p>price : 180</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+            <div class="box4 box"><div class="box-content">
+                <h2>Waldorf salad</h2>
+                <div class="box-img4">
+                    <img src="pictures/waldorf salad.jpeg" class="image">
+                </div>
+                <p>price: 120rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+        </div>
+        <!-- chinese food -->
+        <div class="food-type typing3">
+            <h5>Chinese</h5>
+        </div>
+        <button onclick="sortBoxesByPrice(this.nextElementSibling)" class="btn">Sort by Price</button>
+        <div class="image-container">
+            <div class="box1 box">
+                <div class="box-content">
+                <h2>Spring Roll</h2>
+                <div class="box-img1">
+                    <img src="pictures/veg spring roll.jpeg" class="image">
+                </div>
+                <p>price: 240rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div>
+            </div>
+            <div class="box2 box"><div class="box-content">
+                <h2>SPotstickers</h2>
+                <div class="box-img2">
+                    <img src="pictures/momos.jpeg" class="image">
+                </div>
+                <p>price : 220rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+            <div class="box3 box"><div class="box-content">
+                <h2>Chow Mein</h2>
+                <div class="box-img3">
+                    <img src="pictures/chowmein.jpeg" class="image">
+                </div>
+                <p>price : 200</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+            <div class="box4 box"><div class="box-content">
+                <h2>Hot And Sour Soup</h2>
+                <div class="box-img4">
+                    <img src="pictures/hot and sour soup.jpeg" class="image">
+                </div>
+                <p>price: 150rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+        </div>
+        <!-- Main course -->
+        <div class="food-type typing4">
+            <h5>Main Course</h5>
+        </div>
+        <button onclick="sortBoxesByPrice(this.nextElementSibling)" class="btn">Sort by Price</button>
+        <div class="image-container">
+            <div class="box1 box">
+                <div class="box-content">
+                <h2>Butter Paneer</h2>
+                <div class="box-img1">
+                    <img src="pictures/butter paneer.jpeg" class="image">
+                </div>
+                <p>price: 750rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div>
+            </div>
+            <div class="box2 box"><div class="box-content">
+                <h2>Kali Mirch Paneer</h2>
+                <div class="box-img2">
+                    <img src="pictures/kali mirch paneer.jpeg" class="image">
+                </div>
+                <p>price : 670rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+            <div class="box3 box"><div class="box-content">
+                <h2>Tandoori Paneer</h2>
+                <div class="box-img3">
+                    <img src="pictures/tandoori paneer.jpeg" class="image">
+                </div>
+                <p>price : 550</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+            <div class="box4 box"><div class="box-content">
+                <h2>Garlic Naan</h2>
+                <div class="box-img4">
+                    <img src="pictures/garlic naan.jpeg" class="image">
+                </div>
+                <p>price: 500rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+            <div class="box5 box">
+                <div class="box-content">
+                <h2>Butter Chicken</h2>
+                <div class="box-img5">
+                    <img src="pictures/butter chicken.jpeg" class="image">
+                </div>
+                <p>price: 480rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div>
+            </div>
+            <div class="box6 box">
+                <div class="box-content">
+                <h2>Tandoori Chicken</h2>
+                <div class="box-img6">
+                    <img src="pictures/tandoori chicken.jpeg" class="image">
+                </div>
+                <p>price: 460rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div>
+            </div>
+            <div class="box7 box">
+                <div class="box-content">
+                <h2>Shawarma</h2>
+                <div class="box-img7">
+                    <img src="pictures/shawarma.jpeg" class="image">
+                </div>
+                <p>price: 440rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div>
+            </div>
+            <div class="box8 box">
+                <div class="box-content">
+                <h2>Seekh Chicken</h2>
+                <div class="box-img8">
+                    <img src="pictures/seekh chicken.jpeg" class="image">
+                </div>
+                <p>price: 420rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div>
+            </div>
+        </div>
+        <!-- Desserts -->
+        <div class="food-type typing5">
+            <h5>Desserts</h5>
+        </div>
+        <button onclick="sortBoxesByPrice(this.nextElementSibling)" class="btn">Sort by Price</button>
+        <div class="image-container">
+            <div class="box1 box">
+                <div class="box-content">
+                <h2>Cheesecake</h2>
+                <div class="box-img1">
+                    <img src="pictures/cheesecake.jpeg" class="image">
+                </div>
+                <p>price: 250rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div>
+            </div>
+            <div class="box2 box"><div class="box-content">
+                <h2>Tiramisu</h2>
+                <div class="box-img2">
+                    <img src="pictures/tiramisu cake.jpeg" class="image">
+                </div>
+                <p>price : 200rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+            <div class="box3 box"><div class="box-content">
+                <h2>Chocolate Lava Cake</h2>
+                <div class="box-img3">
+                    <img src="pictures/chocolate lava cake.jpeg" class="image">
+                </div>
+                <p>price : 150</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+            <div class="box4 box"><div class="box-content">
+                <h2>Fresh Fruit Tart</h2>
+                <div class="box-img4">
+                    <img src="pictures/fresh fruit tart.jpeg" class="image">
+                </div>
+                <p>price: 120rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+        </div>
+        <!-- beverages -->
+        <div class="food-type typing6">
+            <h5>Beverages</h5>
+        </div>
+        <button onclick="sortBoxesByPrice(this.nextElementSibling)" class="btn">Sort by Price</button>
+        <div class="image-container">
+            <div class="box1 box">
+                <div class="box-content">
+                <h2>Cappuccino</h2>
+                <div class="box-img1">
+                    <img src="pictures/cappuccino.jpeg" class="image">
+                </div>
+                <p>price: 300rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div>
+            </div>
+            <div class="box2 box"><div class="box-content">
+                <h2>Fresh Juices</h2>
+                <div class="box-img2">
+                    <img src="pictures/fresh juices.jpeg" class="image">
+                </div>
+                <p>price : 250rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+            <div class="box3 box"><div class="box-content">
+                <h2>Craft Beer</h2>
+                <div class="box-img3">
+                    <img src="pictures/craft beer.jpeg" class="image">
+                </div>
+                <p>price : 200</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+            <div class="box4 box"><div class="box-content">
+                <h2>Wine</h2>
+                <div class="box-img4">
+                    <img src="pictures/wine.jpeg" class="image">
+                </div>
+                <p>price: 150rs</p>
+                <button type="submit" class="btn">Order Now</button>
+            </div></div>
+        </div>
+    </div>
+    <button id="theme-toggle">
+        <i id="theme-icon" class="fas fa-moon"></i>
+      </button>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <!-- this is for price sorting -->
+    <script>
+       
+        function sortBoxesByPrice(container) {
+            const boxes = Array.from(container.querySelectorAll(".box"));
+        
+            boxes.sort((a, b) => {
+                const priceA = getPrice(a);
+                const priceB = getPrice(b);
+                return priceA - priceB;
+            });
+        
+            boxes.forEach(box => container.appendChild(box)); // Append in sorted order
+        }
+        
+        function getPrice(box) {
+            const priceText = box.querySelector("p")?.innerText || "";
+            const match = priceText.match(/\d+/);
+            return match ? parseInt(match[0], 10) : 0;
+        }
+        </script>
+        
+</body>
+</html> 

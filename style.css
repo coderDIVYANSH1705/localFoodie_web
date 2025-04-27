@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root
+{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+}
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+    --button-bg: #333333;
+    --button-text: #ffffff;
+
+  }
+  
+  /* Apply theme */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    font-family: sans-serif;
+    padding: 2rem;
+  }
+  
+  /* Theme Toggle Button */
+  #theme-toggle {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Optional: Change button on hover */
+  #theme-toggle:hover {
+    opacity: 0.9;
+  }
+  
+  /* Font Awesome Icon Styling (if used) */
+  #theme-icon {
+    font-size: 1.4rem;
+  }
+.section-title
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+.section-title h2
+{
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+.section-title h2::before
+{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.section-title h2::after
+{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
+
+.box .image
+{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+.box-content{
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+
+.food-type{
+    background-color: white;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 50px;
+    margin-top: 100px;
+}
+/* Smooth zoom effect on image hover */
+
+
+/* On hover, zoom in */
+.box-content .image{
+  border-radius: 8px;
+}
+.box-content:hover .image {
+  transform: scale(1.1); /* slightly zoom in */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* optional shadow */
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+.box-content {
+  transition: transform 0.3s ease;
+}
+
+.box-content:hover {
+  transform: scale(1.02);
+}
+
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* space between images */
+    justify-content: center; /* center the rows (optional) */
+  }
+  
+  .image-container .box {
+    width: calc(25% - 10px); /* 3 in a row with space accounted for */
+    object-fit: cover; /* keeps the image nicely cropped if needed */
+  }
+  .image-container .box p
+  {
+    font-size: 25px;
+  }
+
+  .btn
+{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background: var(--skin-color);
+    transition: all 0.3s ease;
+}
+.btn:hover
+{
+    transform: scale(1.05);
+}
+#theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+/* When body has dark-mode class, style .food-type */
+body.dark-mode .food-type {
+  background-color: #000;  /* black background */
+  color: #fff;             /* white text */
+  padding: 10px 15px;
+  border-radius: 8px;      /* optional: for a nicer look */
+  margin-bottom: 10px;     /* space between sections */
+}
+
+@media only screen and (max-width: 768px) {
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .box-content {
+    padding: 10px;
+  }
+
+  .box-img1 img,
+  .box-img2 img,
+  .box-img3 img,
+  .box-img4 img,
+  .box-img5 img,
+  .box-img6 img,
+  .box-img7 img,
+  .box-img8 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+
+/* Extra Small Devices (Phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .image-container {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
